@@ -1,0 +1,189 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	background-color: #ddd;
+	font-family: "Helvetica";
+}
+
+input[type="text"], input[type="password"]
+{
+    display: block;
+    width: 190px;
+    margin: 0 0 20px 20px;
+    height: 40px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px #999;
+    padding-left: 10px;
+}
+
+
+.button
+{
+	padding: 10px;
+}
+
+
+input[type="submit"]
+{
+	display: block;
+    width: 200px;
+    margin: 0 0 20px 20px;
+    background-color: #3A85CB;
+    border: 1px solid #1F5292;
+    color: white;
+    font-size: 12px;
+    /*-webkit-box-shadow: 0 2px 2px black;*/
+}
+
+.please
+{
+	display: block;
+	text-align: center;
+	font-weight: normal;
+	font-size: 10px;
+	color: #888;
+	margin: 20px 0 20px 0;
+	-webkit-text-shadow : 1px 3px 1px white;
+}
+
+.please b
+{
+	color: #3A85CB;
+}
+
+.logo
+{
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	/*font-weight: bold;*/
+}
+
+.logo b
+{
+	font-weight: bold;
+}
+
+header
+{
+	display: block;
+	width: 220px;
+	height: auto;
+	background-color: #3A85CB;
+	padding: 10px;
+	color: #fff;
+	/*-webkit-text-shadow: 2px 2px 2px white;*/
+}
+
+
+ul#list_item li
+{
+	width: 220px;
+	/*height: 50px;*/
+	/*background-color: red;*/
+	border-bottom: 1px solid #ccc;
+	/*position: relative;*/
+	/*-webkit-background-liniar*/
+	padding: 10px;
+}
+
+ul#list_item li .name
+{
+	font-weight: bold;
+	/*position: absolute;*/
+	display: block;
+	color: #1F5292;
+	margin-bottom: 5px;
+}
+
+ul#list_item li .counter
+{
+	display: block;
+	font-size: 10px;
+	font-weight: bold;
+	color: #444
+}
+
+ul#list_item li:hover
+{
+	background-color: #1F5292;
+}
+
+ul#list_item li:hover .name
+{
+	color: white;
+}
+
+ul#list_item li:hover .counter
+{
+	color: #3A85CB;
+}
+
+#download
+{
+	/*background-color: #222*/
+}
+
+#download_box
+{
+	border-radius: 5px;
+	background-color: white;
+	width: 160px;
+	margin: 0 auto;
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 5px black;
+}
+
+#download_box #item_name, #download_box #item_url, #download_box #backtext
+{
+	display: block;
+	text-align: center;
+}
+
+#download_box a#item_url
+{
+	border: 1px solid #d1d1d1;
+	padding: 10px;
+	text-decoration: none;
+	color: #3A85CB;
+	background-color: #efefef;
+	font-weight: bold;
+	border-radius: 5px;
+	margin: 10px 0 10px 0;
+}
+
+#download_box a#item_url:hover
+{
+	border: 1px solid #1F5292;
+	color: white;
+	background-color: #3A85CB;
+	
+}
+
+
+#download_box #item_name
+{
+	/*margin: 0px 0 10px 0;*/
+	color: #888;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#download_box #backtext
+{
+	font-size: 10px;
+	color: #aaa;
+}
+
+#download_box #backtext a
+{
+	/*font-weight: bold;*/
+	color: #3A85CB;
+	text-decoration: underline;
+}

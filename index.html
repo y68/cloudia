@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>hellobasic</title>
+    <!-- <link href="s40-theme/css/s40-theme.css" rel="stylesheet" type="text/css" /> -->
+    <link href="s40-theme/js/style.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="s40-theme/js/screensize.js"></script>
+    <script language="javascript" type="text/javascript" src="s40-theme/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript">		
+		function refreshPageContent() {
+				// Add code for refreshing te page here...
+		}
+        
+    $(document).ready(function(){
+        
+        function reset()
+        {
+            $('section.page').hide();
+        }
+
+        reset();
+
+        $('section#login').show();
+
+        
+
+    });
+        
+	</script>
+
+</head>
+
+<body>
+
+    
+    
+    <section id="login" class="page">
+        <br><br><br>
+        <div class='logo'><b>Cloud</b>ia</div>
+        <br>
+        <h5 class="please">Please login with your <b>my.cl.ly</b> Account</h5>
+        <input type="text" id="email" placeholder="Email"/>
+        <input type="password" id="password" placeholder="Password"/>
+        <input type="submit" id="login_button" class="button" value="Login"/>
+
+        <script type="text/javascript">  
+
+            $("#login_button").click(function(){
+
+                alert("try to login to server..");
+
+                var email = $('#email').val(); 
+                var password = $('#password').val();
+
+                $.ajax({
+                    url: "http://localhost/project/robocloud/index.php",
+                    type: "post",
+                    data: "email="+ email +"&pass=" + password,
+                    success: function(response){
+                        if(response=='true')
+                        {
+                            alert("Login berhasil");
+                            $('section#login').hide();
+                            $('section#list').show();
+                        }
+                    }
+                });
+
+            });
+
+        </script>
+    </section>
+
+    <section id="list" class="page">
+
+        <script type="text/javascript" src="s40-theme/js/list_item.js"></script>
+
+        <header>
+            <h2>Cloudia</h2>
+        </header>
+
+        <ul id="list_item">
+            <!-- <li class="single_item first">
+                <span class="name">Manual Book.pdf</span>
+                <span class="counter">1416</span>
+            </li> -->
+
+        </ul>
+
+    </section>
+
+    <section id="download" class="page">
+
+        <header>
+            <h2>Cloudia</h2>
+        </header>
+        <br><br><br>
+        <div id="download_box">
+
+            <div id="item_name"></div>
+            <a href="" id="item_url">Download</a>
+            <span id="backtext"><a id="back">Back</a> to item list</span>
+
+        </div>
+        
+
+
+        <script type="text/javascript">
+
+        $(document).ready(function(){
+
+
+            $("#back").click(function(){
+                // alert("back");
+                $("section#list").show();
+                $("section#download").hide();
+
+                $("body").css("background-color", "#ddd");
+
+            });
+        });
+
+        </script>
+    </section>
+    
+    
+</body>
+</html>
