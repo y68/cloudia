@@ -22,7 +22,7 @@
 
         reset();
 
-        $('section#login').show();
+        $('section#upload').show();
 
         
 
@@ -123,6 +123,19 @@
         });
 
         </script>
+    </section>
+
+    <section id="upload" class="page">
+        <header>
+            <h2>Cloudia</h2>
+        </header>
+        <form enctype="multipart/form-data" action="http://localhost/project/robocloud/upload.php" method="POST">
+        Choose a file to upload: 
+        <input name="uploadedfile" type="file" /><br />
+        <input type="submit" value="Upload File" />
+        </form>
+
+
     </section>
     
     
