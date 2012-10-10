@@ -4,12 +4,12 @@
     <name short="hellobasic">cloudia</name>    
 
     <description>
-       An example Basic Series 40 web app runtime.
+       A CloudApp client for Nokia Series 40
     </description>
     
     <!-- Note: Author href MUST BE Url encoded 
         @see http://en.wikipedia.org/wiki/Percent-encoding -->    
-    <author email="yuripertamax@gmail.com" href="http://yuripertamax.github.com">
+    <author email="yuripertamax@gmail.com" href="http://yuripertamax.github.com/cloudia">
         
     </author>
     
@@ -18,7 +18,7 @@
     <content src="index.html"/>
     
     <license>
-	   Copyright Foo Bar Corp, 2012.
+	   Copyright Cloudia 2012
     </license>
     
    	<feature name="nokia://s40.nokia.com/SAWRT/2.0" required="true" />

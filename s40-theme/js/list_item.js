@@ -4,6 +4,8 @@
 	$(document).ready(function(){
 
 		// alert("asdasd");
+		// alert("asd");
+
 		$.getJSON("http://localhost/project/robocloud/list.php", function(data)
 		{
 			// var str = "";

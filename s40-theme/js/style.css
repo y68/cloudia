@@ -70,7 +70,7 @@ input[type="submit"]
 	font-weight: bold;
 }
 
-header
+header h2
 {
 	display: block;
 	width: 220px;
@@ -79,6 +79,34 @@ header
 	padding: 10px;
 	color: #fff;
 	/*-webkit-text-shadow: 2px 2px 2px white;*/
+}
+
+header #nav
+{
+	display: block;
+	width: 100%;
+	background-color: #1F5292
+}
+
+header h4{
+	display: inline;
+	width: 50%;
+	text-align: center;
+	/*background-color: black;*/
+	padding: 0;
+	margin: 0;
+	float: left;
+	background-color: #1F5292;
+	font-weight: normal;
+	padding: 10px 0 10px 0;
+	color: #3A85CB;
+}
+
+
+
+header h4.active
+{
+	color: white;
 }
 
 
@@ -91,6 +119,7 @@ ul#list_item li
 	/*position: relative;*/
 	/*-webkit-background-liniar*/
 	padding: 10px;
+	list-style-type: none;
 }
 
 ul#list_item li .name
@@ -186,4 +215,14 @@ ul#list_item li:hover .counter
 	/*font-weight: bold;*/
 	color: #3A85CB;
 	text-decoration: underline;
+}
+
+input[type="submit"]
+{
+	padding: 10px;
+}
+
+.disable_button
+{
+	color: #1F5292;
 }
